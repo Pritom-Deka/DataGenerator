@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: DataGenApp</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="headerDiv">Mock-Data App</div> 
+
+    <div id="input-div">
+        <div class="name-and-datatype">
+            <label>Enter total rows: </label><input type="number" id="row-number">
+        
+            <label>Field Name: </label><input type="text" id="generate-field-name" placeholder="enter field name..">
+            <label>Datatype: </label>
+            <input id="generate-datatype" list="datatypes" placeholder="search preferred datatype..">
+                <datalist id="datatypes">
+                    <option value="firstname"></option>
+                    <option value="lastname"></option>
+                    <option value="rollno"></option>
+                    <option value="section"></option>
+                    <option value="class"></option>
+                    <option value="email"></option>
+                    <option value="phoneno"></option>
+                    <option value="boolian"></option>
+                </datalist>
+        </div>
+        <button type="button" id="addfield">Add Field</button>
+        <div id="generate-buttons">
+            <button id="csvgenerate">Generate .CSV</button>
+            <div class="separator_table_name"><input type="text" id="tablename" placeholder="Table Name" value="MOCK_DATA"><button id="sqlgenerate">Generate SQL</button></div>
+            <div class="separator_table_name"><input type="text" id="separator" placeholder="Separator"><button id="txtgenerate">Generate .txt</button>
+            <button id="excelgenerate">Generate .xlxs</button></div>
+        </div>
+    </div>
+
+    <section>
+        <div id="fields">
+            <label>Field Name & Data Type</label>
+            <div id="input-info"></div>
+        </div> 
+    
+        <div class="showdata">
+            <label>PRIVIEW:</label>
+        </div>
+    </section>
+    <div class="download-button">
+        <input type="text" id="filename" placeholder="Enter File Name.." value="My File">
+        <a class="downloadfile">Download</a>
+    </div>
+    <div id="footer">
+        <div id="contactDetails">
+            <p style="color: rgb(78, 196, 67); font-size: 20px; border-bottom: .5px solid grey;">Contact Details:</p><br>
+            Phone No.: 9127014289<br>
+            Email ID: dekapritom2002@gmail.com
+        </div>
+        <div id="followDetails">
+            <p style="color: rgb(78, 196, 67); font-size: 20px; border-bottom: 1px solid grey;">Follow:</p><br>
+            Facebook: Pritom deka<br>
+            Instagram: @pritomdeka
+        </div>
+    </div>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.table2excel.js"></script>    
+    <script src="./js/dataGenAppHome.js"></script>
+    <script src="./js/downloadTable.js"></script>
+    <script src="./jsgeneratetxt.js"></script>
+    <script src="./js/generatesql.js"></script>
+    <script src="./generatecsv.js"></script>
+    <script src="./js/FileSaver.js"></script>
+    
+</body>
+</html>

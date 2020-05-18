@@ -1,0 +1,244 @@
+$backgroundColor: rgb(78, 196, 67);
+$hover: rgb(45, 173, 33);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    color: rgb(99, 99, 99);
+}
+
+input, select{
+    width: 250px;
+    font-size: 15px;
+    font-family: Verdana;
+    padding: 5px;
+    border: 1.5px solid $backgroundColor;
+    border-radius: 5px;
+    outline: none;
+}
+
+datalist{
+    background-color: gainsboro;
+    padding: 10px 0px !important;
+    font-family: sans-serif;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    overflow: scroll;
+}
+
+label{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    font-family: sans-serif;
+}
+
+button{
+    width: fit-content;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: $backgroundColor;
+    outline: none;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: $hover;
+}
+
+section{
+    display: flex;
+    border-bottom: .5px solid grey;
+}
+
+a{
+    text-decoration: none;
+}
+
+#headerDiv{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Verdana;
+    background-color: transparent;
+    border-bottom: 2px solid $backgroundColor;
+    color: rgb(99, 99, 99);
+}
+
+#input-div{
+    padding: 10px;
+    border-bottom: .5px solid $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.name-and-datatype{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 10px 0px;
+}
+
+#row-number{
+    width: 100px;
+}
+
+
+#test{
+    margin: 10px 10px;
+}
+
+.field_content{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 2%;
+}
+
+.field_content > span{
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-left: .5px solid $backgroundColor;
+    width: 35%;
+    overflow-x: scroll;
+}
+
+.field_content > button{
+    width: 30%;
+    margin: 0;
+}
+
+section{
+    height: 600px;
+}
+
+#fields{
+    width: 30%;
+    overflow: scroll;    
+}
+
+.showdata{
+    width: 70%;
+    padding: 10px;
+    border-left: 2px solid $backgroundColor;
+    overflow: scroll;
+}
+
+table, td, th{
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+td, th{
+    padding: 5px;
+    width: 200px;
+    font-family: Verdana;
+}
+
+th{
+    color: grey;
+}
+
+#footer{
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    display: flex;
+}
+
+#contactDetails, #followDetails{
+    padding: 10px 20px;
+    width: 50%;
+    font-family: Verdana;
+    color: rgb(94, 92, 92);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+background: $backgroundColor; 
+border-radius: 5px;
+border: 1px solid white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: $hover; 
+}
+
+#sqldiv, #csvdiv, #txtdiv{
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+#generate-buttons{
+    display: flex;
+}
+
+#separator, #tablename{
+    width: 150px;
+    margin: 10px 0px 10px 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#txtgenerate, #sqlgenerate{
+    margin: 10px 10px 10px 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.separator_table_name{
+    width: fit-content;
+    display: flex;
+    height: min-content;
+}
+
+.download-button{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid $backgroundColor;
+}
+
+.downloadfile{
+    width: fit-content;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: $backgroundColor;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.downloadfile:hover{
+    background-color: $hover;
+}
+
+#filename{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1350px){
+    body{
+        overflow: scroll;
+    }
+}
+
