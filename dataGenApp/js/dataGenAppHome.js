@@ -2,13 +2,13 @@ const addbtn = document.getElementById("addfield")
 const show_field = document.getElementById("input-info")
 
 const names = [
-    'pritom', 'rishi', 'swapnil', 'chinmoy', 'jibon', 
-    'rituraj', 'nimesh', 'gautam', 'anish', 'suvashish'
+    'pritom', 'adam', 'peter', 'chris', 'jhon', 
+    'dan', 'ben', 'josh', 'dwayne', 'tonny'
 ]
 
 const titles = [
-    'deka', 'gogoi', 'gautam', 'kashyap', 'bhattacharya',
-    'garg', 'parashar', 'chamuah', 'bhaduri'
+    'deka', 'griffin', 'balmer', 'evans', 'stark',
+    'noah', 'dahnam', 'hanks', 'young'
 ]
 
 const alphabets = [
